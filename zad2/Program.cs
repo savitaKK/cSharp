@@ -12,22 +12,26 @@ string inputValue2;
 inputValue2=Console.ReadLine();
 
 System.Console.WriteLine("Введите третье число");
-string inputValue2;
-inputValue2=Console.ReadLine();
+string inputValue3;
+inputValue3=Console.ReadLine();
 
 int value1= Convert.ToInt32(inputValue1);
 int value2= Convert.ToInt32(inputValue2);
 int value3= Convert.ToInt32(inputValue3);
 
-if (value1>=value2)
+if (value1>value2)
 {
-   System.Console.WriteLine("Числа равны"); 
+   System.Console.WriteLine($"Максимальное число {value1}"); 
 }
-else if (value1>value2)
+else if (value1>value3)
 {
-    System.Console.WriteLine($"Наибольшее число {value1}, а наименьшее число {value2}");
+    System.Console.WriteLine($"Максимальное число {value1}");
+}
+else if (value2>value3)
+{
+    System.Console.WriteLine($"Максимальное число {value2}");
 }
 else
 {
-    System.Console.WriteLine($"Наибольшее число {value2}, а наименьшее число {value1}");
+    System.Console.WriteLine($"Максимальное число {value3}");
 }
